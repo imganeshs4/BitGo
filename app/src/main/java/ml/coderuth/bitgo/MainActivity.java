@@ -12,13 +12,10 @@ import ml.coderuth.bitgo.bit.BitActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String URL = "https://github.com/nitrico/mapviewpager";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         findViewById(R.id.card2).setOnClickListener(new View.OnClickListener() {
             @Override
