@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import ml.coderuth.bitgo.R;
+
 /**
  * Created by krzysztofjackowski on 24/09/15.
  */
