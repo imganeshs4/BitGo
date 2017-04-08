@@ -2,21 +2,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <SurfaceView
-        android:id="@+id/cameraview"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@android:drawable/ic_btn_speak_now"
-        android:visibility="invisible" />
+        <SurfaceView
+            android:id="@+id/cameraview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_bitcoin_coin"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="2dp" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:text="@string/sample_2" />
+                <TextView
+                    android:id="@+id/details1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:text="@string/details_2" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/cameraTextView"
