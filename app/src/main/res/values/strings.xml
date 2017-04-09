@@ -9,8 +9,11 @@
 
     <string name="sample_2">Search Nearby</string>
 
-    <string name="details_1"><![CDATA[• One marker per fragment\n• Default layout]]></string>
-    <string name="details_2"><![CDATA[• Any amount of markers per fragment\n• Custom layout\n• Custom initial position]]></string>
+    <string name="details_1"><![CDATA[• Lists all the merchants nearby who support our service]]></string>
+    <string name="details_2"><![CDATA[• Buying anything fom them will, give you a share of the amount of the bill ]]></string>
+
+    <string name="details_1_1"><![CDATA[• Roam around, find the location of Bitcoin]]></string>
+    <string name="details_2_1"><![CDATA[• Play A Simple Flappy Bird Game to get the reward. ]]></string>
 
     <string name="item_1">Item 1</string>
     <string name="item_2">Item 2</string>

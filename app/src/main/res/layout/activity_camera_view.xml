@@ -14,13 +14,17 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_bitcoin_coin"
-            android:visibility="invisible" />
+            <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bitcoin_coin"
+                android:visibility="invisible"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="1"
+                android:onClick="getMsg"/>
 
         <android.support.v7.widget.CardView
             android:id="@+id/card1"
@@ -31,29 +35,33 @@
             android:layout_marginBottom="60dp"
             android:layout_gravity="bottom"
             android:foreground="?android:selectableItemBackground"
-            card_view:cardBackgroundColor="@android:color/white"
             card_view:cardUseCompatPadding="false"
             card_view:cardCornerRadius="2dp"
             card_view:cardElevation="2dp" >
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical" >
-                <TextView
-                    android:id="@+id/title1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:text="@string/sample_2" />
-                <TextView
-                    android:id="@+id/details1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:text="@string/details_2" />
-            </LinearLayout>
+                android:scaleType="fitXY"
+                android:src="@drawable/mcd" />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="16dp"-->
+                <!--android:orientation="vertical" >-->
+                <!--<TextView-->
+                    <!--android:id="@+id/title1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+                    <!--android:text="@string/sample_2" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/details1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                    <!--android:text="@string/details_2" />-->
+            <!--</LinearLayout>-->
         </android.support.v7.widget.CardView>
     </FrameLayout>
 

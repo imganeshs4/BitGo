@@ -63,14 +63,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:text="@string/sample_2" />
+                    android:text="Free Roam" />
                 <TextView
                     android:id="@+id/details1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:text="@string/details_2" />
+                    android:text="" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
