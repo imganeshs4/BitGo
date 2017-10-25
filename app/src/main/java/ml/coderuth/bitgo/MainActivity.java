@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import ml.coderuth.bitgo.augmented.CameraViewActivity;
 import ml.coderuth.bitgo.bit.BitActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BitActivity.class));
+            }
+        });
+
+        findViewById(R.id.card1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CameraViewActivity.class));
             }
         });
 

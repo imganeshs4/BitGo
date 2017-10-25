@@ -11,6 +11,9 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="es.esnmurcia.app.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +30,11 @@
         </activity>
 
         <activity android:name=".MainActivity"></activity>
+
+        <activity
+            android:name="ml.coderuth.bitgo.augmented.CameraViewActivity"
+            android:label="@string/title_activity_camera_view" >
+        </activity>
 
         <activity android:name=".bit.BitActivity" android:theme="@style/NoActionBar" />
 
